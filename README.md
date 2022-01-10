@@ -1,6 +1,6 @@
 ## KidzMash Chase
 
-KidzMash Chase is a simple yet fun game intended to teach people 10 and older the basics of programming and game development using nothing but a browser, the free open source [Phaser.io](http://www.phaser.io/) game framework, JavaScript and HTML.
+KidzMash Chase is a simple yet fun game intended to teach people 10 and older the basics of programming and game development using nothing but a browser, the free open source [Phaser.io](http://www.phaser.io/){:target="_blank" rel="noopener"} game framework, JavaScript and HTML.
 
 ![KidzMash Chase Game Play](images/KidzMashChase.gif)
 
@@ -15,7 +15,7 @@ Web Browser and Internet connection. That's it. This workshop was intentinally d
 
 Instead of using a text editor or IDE to write code, we will use the web site [https://jsfiddle.net/](https://jsfiddle.net/){:target="_blank" rel="noopener"}. JSFiddle enables us to edit and run JavaScript, HTML and CSS all inside the browser.
 
-1. Using a web browser to navigate, go to (https://jsfiddle.net/).
+1. Using a web browser to navigate, go to [https://jsfiddle.net/](https://jsfiddle.net/){:target="_blank" rel="noopener"}.
 
 ![JSFiddle](images/jsfiddle.png)
 
