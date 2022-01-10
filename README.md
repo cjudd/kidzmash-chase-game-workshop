@@ -1,10 +1,10 @@
-## Cougar Chase
+## KidzMash Chase
 
-Cougar Chase is a simple yet fun game intended to teach people 12 and older the basics of programming and game development using nothing but a browser, the free open source [Phaser.io](http://www.phaser.io/) game framework, JavaScript and HTML.
+KidzMash Chase is a simple yet fun game intended to teach people 10 and older the basics of programming and game development using nothing but a browser, the free open source [Phaser.io](http://www.phaser.io/) game framework, JavaScript and HTML.
 
-![Cougar Chase Game Play](images/CougarChase.gif)
+![KidzMash Chase Game Play](images/KidzMashChase.gif)
 
-Ages - 12+  
+Ages - 10+  
 Cost - $0  
 
 ## Prerequisites
@@ -13,9 +13,9 @@ Web Browser and Internet connection. That's it. This workshop was intentinally d
 
 ## Setup
 
-Instead of using a text editor or IDE to write code, we will use the web site https://jsfiddle.net/. JSFiddle enables us to edit and run JavaScript, HTML and CSS all inside the browser.
+Instead of using a text editor or IDE to write code, we will use the web site [https://jsfiddle.net/]. JSFiddle enables us to edit and run JavaScript, HTML and CSS all inside the browser.
 
-1. Using a web browser to navigate, go to https://jsfiddle.net/.
+1. Using a web browser to navigate, go to [https://jsfiddle.net/].
 
 ![JSFiddle](images/jsfiddle.png)
 
@@ -25,16 +25,16 @@ JSFiddle is organized in 4 main quadrants. The top left is where you enter HTML,
 
 We will start by adding some basic HTML to host the game.
 
-1. In HTML (top left quadrant), add the following html to create a page with a title of Cougar Chase and a message to the user about how to play the game.
+1. In HTML (top left quadrant), add the following html to create a page with a title of KidzMash Chase and a message to the user about how to play the game.
 
 ```
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Cougar Chase</title>
+    <title>KidzMash Chase</title>
   </head>
   <body>
-    <h1>Cougar Chase</h1>
+    <h1>KidzMash Chase</h1>
     <p>Use the arrow keys to move around and collect the coins.</p>
   </body>
 </html>
@@ -63,11 +63,11 @@ Rather than add all the complicated and common code to make a game work such as 
 
 The way the Phaser.io framework works and many other game frameworks is the preload function will be called once to load all the game assets like images. Then the create method will be called once to create and initialize any game objects like players. Finally the update function will be called. But it is not called once, it is called over and over again. 60 times a second. This is logic goes to check and change the state of the game, such as were did the user go.
 
-1. In HTML below the `<title>Cougar Chase</title>` and above `</head>` add the following to load the Phaser.io library.
+1. In HTML below the `<title>KidzMash Chase</title>` and above `</head>` add the following to load the Phaser.io library.
 ```html
 <script src="//cdn.jsdelivr.net/npm/phaser@3.24.1/dist/phaser.min.js"></script>
 ```
-2. Also in HTML below `<h1>Cougar Chase</h1>` and above `<p>Use the arrow keys to move around and collect the coins.</p>` add the following game div that Phaser.io will render the game.
+2. Also in HTML below `<h1>KidzMash Chase</h1>` and above `<p>Use the arrow keys to move around and collect the coins.</p>` add the following game div that Phaser.io will render the game.
 ```
 <div id="game"></div>
 ```
@@ -106,11 +106,11 @@ You should now see a blue box in your web page.
 
 ## Add Player
 
-Now it's time to add a player and make them move around the game scene. We will use an image of a cougar as our player.
+Now it's time to add a player and make them move around the game scene. We will use an image of a kidzmash as our player.
 
-1. In JavaScript, in the preload function, add the following to load the cougar image.
+1. In JavaScript, in the preload function, add the following to load the kidzmash image.
 ```javascript
-this.load.image('player', 'https://cjudd.github.io/basic-js-game-workshop/images/cougar.png');
+this.load.image('player', 'https://cjudd.github.io/kidzmash-chase-game-workshop/images/kidzmash.png');
 ```
 2. In JavaScript, in the create function, add the following to create the player and place them at the coordinates of 100 and 100.
 ```javascript
@@ -118,7 +118,7 @@ this.player = this.physics.add.sprite(100, 100, 'player');
 ```
 3. Press the Run button.
 
-Now you should have the cougar/player in the blue game square.
+Now you should have the kidzmash/player in the blue game square.
 
 ![Player in Scene](images/playerinscene.png)
 
@@ -223,11 +223,11 @@ In HTML:
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Cougar Chase</title>
+    <title>KidzMash Chase</title>
     <script src="//cdn.jsdelivr.net/npm/phaser@3.24.1/dist/phaser.min.js"></script>
   </head>
   <body>
-    <h1>Cougar Chase</h1>
+    <h1>KidzMash Chase</h1>
     <div id="game"></div>
     <p>Use the arrow keys to move around and collect the coins.</p>
   </body>
@@ -246,8 +246,8 @@ In JavaScript + No-Library (pure JS)
 class mainScene {
     preload() {
         // Preload assets like sprites and sounds
-        this.load.image('player', 'https://cjudd.github.io/basic-js-game-workshop/images/cougar.png');
-        this.load.image('coin', 'https://cjudd.github.io/basic-js-game-workshop/images/coin.png');
+        this.load.image('player', 'https://cjudd.github.io/kidzmash-chase-game-workshop/images/kidzmash.png');
+        this.load.image('coin', 'https://cjudd.github.io/kidzmash-chase-game-workshop/images/coin.png');
     }
 
     create() {
