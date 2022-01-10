@@ -13,9 +13,9 @@ Web Browser and Internet connection. That's it. This workshop was intentinally d
 
 ## Setup
 
-Instead of using a text editor or IDE to write code, we will use the web site [https://jsfiddle.net/]. JSFiddle enables us to edit and run JavaScript, HTML and CSS all inside the browser.
+Instead of using a text editor or IDE to write code, we will use the web site [https://jsfiddle.net/](https://jsfiddle.net/){:target="_blank" rel="noopener"}. JSFiddle enables us to edit and run JavaScript, HTML and CSS all inside the browser.
 
-1. Using a web browser to navigate, go to [https://jsfiddle.net/].
+1. Using a web browser to navigate, go to (https://jsfiddle.net/).
 
 ![JSFiddle](images/jsfiddle.png)
 
@@ -153,7 +153,7 @@ Having a player running around the screen without any goal or purpose wouldn't b
 
 1. In JavaScript, in the create function, add the following to load the coin image.
 ```javascript
-this.load.image('coin', 'https://cjudd.github.io/basic-js-game-workshop/images/coin.png');
+this.load.image('coin', 'https://cjudd.github.io/kidzmash-chase-game-workshop/images/coin.png');
 ```
 2. In the JavaScript, in the update function, add the following to initially create a coin.
 ```javascript
