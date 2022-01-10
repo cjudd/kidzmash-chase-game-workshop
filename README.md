@@ -57,21 +57,22 @@ In Result, you should see the updated title with the Helvetica font.
 
 ![Title with Helvetica font](images/title.png)
 
-## Add Phaser.io and Main Seen
+## Add Phaser.io and Main Scene
 
-Rather than add all the complicated and common code to make a game work such as character movement, physics and collision detection, we will use a popular free and open source framework called Phaser.io that can be found at http://www.phaser.io/ so we can focus on what makes our game fun and unique. In order to do this, in the HTML we will need to add a dependency on the Phaser.io library and a div tag (game) where the game is suppose to be rendered. Next, we will add a JavaScript class representing our main scene. It will set the height, width and background color of our game using a hex value. It will also define the type of physics to use as well as the div to update (game) and the JavaScript class containing the game lifecycle functions (preload, create, update).
+Rather than add all the complicated and common code to make a game work such as character movement, physics and collision detection, we will use a popular free and open source framework called [Phaser.io](http://www.phaser.io/){:target="_blank" rel="noopener"} that can be found at [http://www.phaser.io/](http://www.phaser.io/){:target="_blank" rel="noopener"} so we can focus on what makes our game fun and unique. In order to do this, in the HTML we will need to add a dependency on the Phaser.io library and a div tag (game) where the game is suppose to be rendered. Next, we will add a JavaScript class representing our main scene. It will set the height, width and background color of our game using a hex value. It will also define the type of physics to use as well as the div to update (game) and the JavaScript class containing the game lifecycle functions (preload, create, update).
 
-The way the Phaser.io framework works and many other game frameworks is the preload function will be called once to load all the game assets like images. Then the create method will be called once to create and initialize any game objects like players. Finally the update function will be called. But it is not called once, it is called over and over again. 60 times a second. This is logic goes to check and change the state of the game, such as were did the user go.
+The way the Phaser.io framework works and many other game frameworks is the preload function will be called once to load all the game assets like images. Then the create method will be called once to create and initialize any game objects like players. Finally the update function will be called. But it is not called once, it is called over and over again. 60 times a second. This is where the game logic goes to check and change the state of the game, such as were did the player goes.
 
 1. In HTML below the `<title>KidzMash Chase</title>` and above `</head>` add the following to load the Phaser.io library.
 ```html
 <script src="//cdn.jsdelivr.net/npm/phaser@3.24.1/dist/phaser.min.js"></script>
 ```
 2. Also in HTML below `<h1>KidzMash Chase</h1>` and above `<p>Use the arrow keys to move around and collect the coins.</p>` add the following game div that Phaser.io will render the game.
-```
+```html
 <div id="game"></div>
 ```
 3. In JavaScript, add the following to set up basic game mechanics.
+
 ```javascript
 class mainScene {
 
