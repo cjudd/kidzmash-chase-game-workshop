@@ -157,11 +157,11 @@ this.arrow = this.input.keyboard.createCursorKeys();
 
 Having a player running around the screen without any goal or purpose wouldn't be fun for long. So we are going to add a coin for the player go and get. Once that player collides/overlaps with the coin a new coin will be randomly generated for the player retrieve.
 
-1. In JavaScript, in the create function, add the following to load the coin image.
+1. In JavaScript, in the preload function, add the following to load the coin image.
 ```javascript
 this.load.image('coin', 'https://cjudd.github.io/kidzmash-chase-game-workshop/images/coin.png');
 ```
-2. In the JavaScript, in the update function, add the following to initially create a coin.
+2. In the JavaScript, in the create function, add the following to initially create a coin.
 ```javascript
 this.coin = this.physics.add.sprite(300, 300, 'coin');
 ```
